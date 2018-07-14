@@ -8,6 +8,9 @@ on init
 on boot
     write /sys/class/thermal/thermal_message/sconfig 10
 
+    # OTG
+    write /sys/class/power_supply/usb/otg_switch 1
+
 service vendor.imsdatadaemon /vendor/bin/imsdatadaemon
     override
     class main
