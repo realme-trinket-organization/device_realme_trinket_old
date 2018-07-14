@@ -4,6 +4,9 @@ on boot
     chown system system /sys/class/power_supply/battery/input_suspend
     chmod 0666 /sys/class/power_supply/battery/input_suspend
 
+    # OTG
+    write /sys/class/power_supply/usb/otg_switch 1
+
 service vendor.imsdatadaemon /vendor/bin/imsdatadaemon
     override
     class main
