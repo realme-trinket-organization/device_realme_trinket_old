@@ -1,0 +1,13 @@
+[
+  {
+    "repository": "PotatoDevices/vendor_xiaomi_raphael",
+    "target_path": "vendor/xiaomi/raphael",
+    "branch": "croquette-release"
+  },
+  {
+    "repository": "PotatoDevices/kernel_xiaomi_raphael",
+    "target_path": "kernel/xiaomi/raphael",
+    "branch": "croquette-release"
+  }
+]
+
