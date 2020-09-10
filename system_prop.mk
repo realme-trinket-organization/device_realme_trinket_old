@@ -35,7 +35,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.eyecare.brightness.level=5 \
     ro.displayfeature.histogram.enable \
     ro.hist.brightness.threshold=7 \
-    ro.sf.lcd_density=440 \
+    ro.sf.lcd_density=320 \
     ro.vendor.display.ad=1 \
     ro.vendor.display.ad.hdr_calib_data=/vendor/etc/hdr_config.cfg \
     ro.vendor.display.ad.sdr_calib_data=/vendor/etc/sdr_config.cfg \
@@ -43,7 +43,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.xiaomi.bl.poll=true \
     persist.displayfeature.dc_backlight.threshold=610 \
     persist.displayfeature.dc_backlight.enable=false \
-    persist.fod.modified.dc_status=false \
     sys.displayfeature.hbm.enable=true
 
 # Graphics

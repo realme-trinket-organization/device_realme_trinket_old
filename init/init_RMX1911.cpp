@@ -42,43 +42,18 @@ void property_override_dual(char const system_prop[], char const vendor_prop[],
     property_override(vendor_prop, value);
 }
 
-void load_raphaelglobal() {
-    property_override("ro.product.model", "Mi 9T Pro");
-    property_override("ro.build.product", "raphael");
-    property_override("ro.product.device", "raphael");
-    property_override("ro.build.description", "raphael-user 10 QKQ1.190825.002 V11.0.3.0.QFKEUXM release-keys");
-    property_override("ro.control_privapp_permissions", "log");
-}
-
-void load_raphaelin() {
-    property_override("ro.product.model", "Redmi K20 Pro");
-    property_override("ro.build.product", "raphaelin");
-    property_override("ro.product.device", "raphaelin");
-    property_override("ro.build.description", "raphaelin-user 10 QKQ1.190825.002 V11.0.1.0.QFKINXM release-keys");
-    property_override("ro.control_privapp_permissions", "log");
-}
-
-void load_raphael() {
-    property_override("ro.product.model", "Redmi K20 Pro");
-    property_override("ro.build.product", "raphael");
-    property_override("ro.product.device", "raphael");
-    property_override("ro.build.description", "raphael-user 10 QKQ1.190825.002 V11.0.2.0.QFKCNXM release-keys");
+void load_RMX1911() {
+    property_override("ro.product.model", "Realme 5");
+    property_override("ro.build.product", "RMX1911");
+    property_override("ro.product.device", "RMX1911");
+    property_override("ro.build.description", "unknown-user 10 QKQ1.200209.002 unknown release-keys");
     property_override("ro.control_privapp_permissions", "log");
 }
 
 
 void vendor_load_properties() {
-    std::string region = android::base::GetProperty("ro.boot.hwc", "");
+    load_RMX1911();
 
-    if (region.find("CN") != std::string::npos) {
-        load_raphael();
-    } else if (region.find("INDIA") != std::string::npos) {
-        load_raphaelin();
-    } else if (region.find("GLOBAL") != std::string::npos) {
-        load_raphaelglobal();
-    } else {
-        LOG(ERROR) << __func__ << ": unexcepted region!";
-    }
     property_override("ro.vendor.build.fingerprint", "google/coral/coral:10/QQ2A.200501.001.B2/6352890:user/release-keys");
     property_override("ro.build.fingerprint", "google/coral/coral:10/QQ2A.200501.001.B2/6352890:user/release-keys");
 }

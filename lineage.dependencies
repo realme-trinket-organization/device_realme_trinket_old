@@ -1,13 +1,13 @@
 [
   {
-    "repository": "PotatoDevices/vendor_xiaomi_raphael",
-    "target_path": "vendor/xiaomi/raphael",
-    "branch": "croquette-release"
+    "repository": "dodyirawan85/vendor_realme_RMX1911",
+    "target_path": "vendor/realme/RMX1911",
+    "branch": "ten"
   },
   {
-    "repository": "PotatoDevices/kernel_xiaomi_raphael",
-    "target_path": "kernel/xiaomi/raphael",
-    "branch": "croquette-release"
+    "repository": "dodyirawan85/kernel_realme_RMX1911",
+    "target_path": "kernel/realme/RMX1911",
+    "branch": "ten"
   }
 ]
 

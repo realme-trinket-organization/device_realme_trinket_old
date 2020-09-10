@@ -41,16 +41,6 @@
 #define TZ_VER_STR_LEN 24
 #define TZ_VER_BUF_LEN 19
 
-#define VENDOR_PART_PATH "/dev/block/bootdevice/by-name/vendor"
-#define VENDOR_DATE_STR "ro.vendor.build.date.utc="
-#define VENDOR_DATE_STR_LEN 25
-#define VENDOR_DATE_BUF_LEN 11
-
-#define VENDOR_VER_STR "ro.vendor.build.version.incremental="
-#define VENDOR_VER_STR_LEN 36
-#define VENDOR_VER_BUF_LEN 18
-
-
 /* Boyer-Moore string search implementation from Wikipedia */
 
 /* Return longest suffix length of suffix ending at str[p] */
@@ -199,48 +189,6 @@ Value* VerifyTrustZoneFn(const char* name, State* state,
     return StringValue(strdup(ret ? "1" : "0"));
 }
 
-/* verify_vendor("REGION", "BUILD DATE") */
-Value* VerifyVendorFn(const char* name, State* state,
-                     const std::vector<std::unique_ptr<Expr>>& argv) {
-
-    char current_build_date[VENDOR_DATE_BUF_LEN];
-    char current_version[VENDOR_VER_BUF_LEN];
-    int ret;
-
-    // Parse arguments
-    std::vector<std::string> args;
-    if (!ReadArgs(state, argv, &args)) {
-        return ErrorAbort(state, kArgsParsingFailure, "%s() error parsing arguments", name);
-    }
-
-    // Check for vendor version
-    ret = get_info(current_version, VENDOR_VER_BUF_LEN, VENDOR_VER_STR, VENDOR_VER_STR_LEN,
-                   VENDOR_PART_PATH);
-    if (ret) {
-        return ErrorAbort(state, kVendorFailure,
-                          "%s() failed to read current vendor version: %d", name, ret);
-    }
-
-    if (current_version != args[0]) {
-        return StringValue(strdup("0"));
-    }
-
-    // Check for UTC build date
-    ret = get_info(current_build_date, VENDOR_DATE_BUF_LEN, VENDOR_DATE_STR, VENDOR_DATE_STR_LEN,
-                   VENDOR_PART_PATH);
-    if (ret) {
-        return ErrorAbort(state, kVendorFailure,
-                          "%s() failed to read current vendor UTC build date: %d", name, ret);
-    }
-
-    if (std::stoi(current_build_date) >= std::stoi(args[1])) {
-        ret = 1;
-
-    }
-    return StringValue(strdup(ret ? "1" : "0"));
-}
-
-void Register_librecovery_updater_raphael() {
-    RegisterFunction("raphael.verify_trustzone", VerifyTrustZoneFn);
-    RegisterFunction("raphael.verify_vendor", VerifyVendorFn);
+void Register_librecovery_updater_RMX1911() {
+    RegisterFunction("RMX1911.verify_trustzone", VerifyTrustZoneFn);
 }
