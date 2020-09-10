@@ -6,12 +6,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.camera.sat.fallback.dist=40 \
-    persist.camera.sat.fallback.dist.d=10 \
-    persist.camera.sat.fallback.luxindex=310 \
-    persist.camera.sat.fallback.lux.d=50 \
-    persist.vendor.camera.enableNCSService=TRUE \
-    persist.vendor.camera.enableTOFInterface=TRUE \
     vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
 
 # CNE and DPM
@@ -31,19 +25,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.eyecare.brightness.threshold=11 \
-    ro.eyecare.brightness.level=5 \
-    ro.displayfeature.histogram.enable \
-    ro.hist.brightness.threshold=7 \
     ro.sf.lcd_density=320 \
     ro.vendor.display.ad=1 \
-    ro.vendor.display.ad.hdr_calib_data=/vendor/etc/hdr_config.cfg \
-    ro.vendor.display.ad.sdr_calib_data=/vendor/etc/sdr_config.cfg \
+    ro.vendor.display.ad.sdr_calib_data=/vendor/etc/OPPO_OLED_AD_calib.cfg \
     ro.vendor.display.sensortype=2 \
-    ro.xiaomi.bl.poll=true \
-    persist.displayfeature.dc_backlight.threshold=610 \
-    persist.displayfeature.dc_backlight.enable=false \
-    sys.displayfeature.hbm.enable=true
+    vendor.display.svi.config=1 \
+    vendor.display.svi.config_path=/vendor/etc/SVIConfig_19631.xml
 
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -54,7 +41,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.vendor.display.enable_kernel_idle_timer=true \
     ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
-    ro.surface_flinger.has_HDR_display=true \
     ro.surface_flinger.has_wide_color_display=true \
     ro.surface_flinger.max_frame_buffer_acquired_buffers=2 \
     ro.surface_flinger.max_virtual_display_dimension=4096 \
@@ -64,7 +50,6 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.set_display_power_timer_ms=1000 \
     ro.surface_flinger.support_kernel_idle_timer=true \
     ro.surface_flinger.use_color_management=true \
-    ro.surface_flinger.use_smart_90_for_video=true \
     ro.surface_flinger.vsync_event_phase_offset_ns=2000000 \
     ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000 \
     ro.surface_flinger.wcg_composition_dataspace=143261696
