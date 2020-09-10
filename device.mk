@@ -92,6 +92,7 @@ PRODUCT_COPY_FILES += \
 
 # Init
 PRODUCT_PACKAGES += \
+    init.oppo.fingerprint.rc \
     init.qcom.rc \
     init.qcom.post_boot.sh \
     init.safailnet.rc

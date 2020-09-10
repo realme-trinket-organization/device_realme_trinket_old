@@ -1,4 +1,5 @@
 import /system/etc/init/init.safailnet.rc
+import /system/etc/init/init.oppo.fingerprint.rc
 
 on init
     chown system system /proc/touchpanel/double_tap_enable
