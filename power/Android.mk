@@ -33,7 +33,7 @@ LOCAL_SRC_FILES := \
     powerhintparser.c \
     service.cpp \
     Power.cpp \
-    power-msmnile.c
+    power-sm6125.c
 
 LOCAL_C_INCLUDES := external/libxml2/include \
                     external/icu/icu4c/source/common
