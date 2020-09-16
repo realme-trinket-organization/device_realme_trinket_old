@@ -46,7 +46,6 @@ void load_RMX1911() {
     property_override("ro.product.model", "Realme 5");
     property_override("ro.build.product", "RMX1911");
     property_override("ro.product.device", "RMX1911");
-    property_override("ro.build.description", "unknown-user 10 QKQ1.200209.002 unknown release-keys");
     property_override("ro.control_privapp_permissions", "log");
 }
 
@@ -54,6 +53,7 @@ void load_RMX1911() {
 void vendor_load_properties() {
     load_RMX1911();
 
-    property_override("ro.vendor.build.fingerprint", "google/coral/coral:10/QQ2A.200501.001.B2/6352890:user/release-keys");
-    property_override("ro.build.fingerprint", "google/coral/coral:10/QQ2A.200501.001.B2/6352890:user/release-keys");
+    property_override("ro.build.description", "coral-user 11 RP1A.200720.009 6720564 release-keys");
+    property_override("ro.vendor.build.fingerprint", "google/coral/coral:11/RP1A.200720.009/6720564:user/release-keys");
+    property_override("ro.build.fingerprint", "google/coral/coral:11/RP1A.200720.009/6720564:user/release-keys");
 }
