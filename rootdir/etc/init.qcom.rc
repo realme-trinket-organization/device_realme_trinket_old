@@ -21,14 +21,6 @@ on boot
     # Enable oppo's touchpanel direction
     write /proc/touchpanel/oppo_tp_direction 1
 
-service vendor.imsdatadaemon /vendor/bin/imsdatadaemon
-    override
-    class main
-    user radio
-    socket ims_datad stream 0660 system radio
-    group radio wifi inet vendor_qti_diag log
-    disabled
-
 on property:sys.boot_completed=1
     start vendor.msm_irqbalance
 
