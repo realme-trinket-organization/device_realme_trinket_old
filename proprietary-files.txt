@@ -126,58 +126,58 @@ product/lib64/vendor.qti.gnss@2.0.so
 product/lib64/vendor.qti.gnss@2.1.so
 product/lib64/vendor.qti.gnss@3.0.so
 
-# IMS
-etc/permissions/com.qualcomm.qti.imscmservice.xml
--product/app/imssettings/imssettings.apk
--product/app/uceShimService/uceShimService.apk
-product/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml
-product/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml
-product/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml
--product/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar
--product/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar
--product/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar
--product/framework/com.qualcomm.qti.uceservice-V2.0-java.jar
--product/framework/com.qualcomm.qti.uceservice-V2.1-java.jar
--product/framework/vendor.qti.ims.callinfo-V1.0-java.jar
--product/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar
--product/framework/vendor.qti.ims.rcsconfig-V1.1-java.jar
-product/lib/com.qualcomm.qti.imscmservice@1.0.so
-product/lib/com.qualcomm.qti.imscmservice@2.0.so
-product/lib/com.qualcomm.qti.imscmservice@2.1.so
-product/lib/com.qualcomm.qti.imscmservice@2.2.so
-product/lib/com.qualcomm.qti.uceservice@2.0.so
-product/lib/com.qualcomm.qti.uceservice@2.1.so
-product/lib/lib-imsvideocodec.so
-product/lib/lib-imsvt.so
-product/lib/lib-imsvtextutils.so
-product/lib/lib-imsvtutils.so
-product/lib/libdiag_system.so
-product/lib/libimscamera_jni.so
-product/lib/libimsmedia_jni.so
-product/lib/vendor.qti.ims.callinfo@1.0.so
-product/lib/vendor.qti.ims.rcsconfig@1.0.so
-product/lib/vendor.qti.ims.rcsconfig@1.1.so
-product/lib/vendor.qti.imsrtpservice@2.0.so
-product/lib/vendor.qti.imsrtpservice@2.1.so
-product/lib64/com.qualcomm.qti.imscmservice@1.0.so
-product/lib64/com.qualcomm.qti.imscmservice@2.0.so
-product/lib64/com.qualcomm.qti.imscmservice@2.1.so
-product/lib64/com.qualcomm.qti.imscmservice@2.2.so
-product/lib64/com.qualcomm.qti.uceservice@2.0.so
-product/lib64/com.qualcomm.qti.uceservice@2.1.so
-product/lib64/lib-imsvideocodec.so
-product/lib64/lib-imsvt.so
-product/lib64/lib-imsvtextutils.so
-product/lib64/lib-imsvtutils.so
-product/lib64/libdiag_system.so
-product/lib64/libimscamera_jni.so
-product/lib64/libimsmedia_jni.so
-product/lib64/vendor.qti.ims.callinfo@1.0.so
-product/lib64/vendor.qti.ims.rcsconfig@1.0.so
-product/lib64/vendor.qti.ims.rcsconfig@1.1.so
-product/lib64/vendor.qti.imsrtpservice@2.0.so
-product/lib64/vendor.qti.imsrtpservice@2.1.so
--product/priv-app/ims/ims.apk
+# IMS - from qssi-user-10-QKQ1.200114.002-18-release-keys
+etc/permissions/com.qualcomm.qti.imscmservice.xml|db25ef24f1937366d58a53b4f4b8923bc9e98d2d
+-product/app/imssettings/imssettings.apk|d983438454ddf0012155541bc40980b25cac3b51
+-product/app/uceShimService/uceShimService.apk|f0b110251999d49401c461ab50b90c1925fd3754
+product/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml|aeaf8d4c7d421bd25a1aca1736980b6e4575c7ce
+product/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml|d52cdba3a8f1c00098568965c0cbaa03502f961e
+product/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml|bc80cc63f55de0d80e9756dd4a9d0afc36072c61
+-product/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar|ffd8d94c2b41fef4e422f7247ee164d7ed70ff5d
+-product/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar|836ef6801f0a09cde1bbef7af8b282365198fac4
+-product/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar|fde4900c414b5666c09ca2e792a0b7ac1be3a808
+-product/framework/com.qualcomm.qti.uceservice-V2.0-java.jar|2f4d6d2681e1adfc249eb6f88858710b12053448
+-product/framework/com.qualcomm.qti.uceservice-V2.1-java.jar|f9dadb1b224d100ecc0a8785bde463d9d1bc7a45
+-product/framework/vendor.qti.ims.callinfo-V1.0-java.jar|a01874e994d2674d538f86de39e9ccbf6ef3fc8c
+-product/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar|f2a2e5554ad6ae1363a9aa76c6d0e6732bbdc7fb
+-product/framework/vendor.qti.ims.rcsconfig-V1.1-java.jar|1c44a0a14003d8c81f425317a11353733c9ca243
+product/lib/com.qualcomm.qti.imscmservice@1.0.so|7fc32da517059db0bec71584a2ddb5957e32aee2
+product/lib/com.qualcomm.qti.imscmservice@2.0.so|f63c9b8cdc39438387238250184dc7115ad9b0a1
+product/lib/com.qualcomm.qti.imscmservice@2.1.so|be943b99cec389eac3f008dc425c36f68e3bcde9
+product/lib/com.qualcomm.qti.imscmservice@2.2.so|f003ab10f08ade40625f0eeb2e89caf26dcda480
+product/lib/com.qualcomm.qti.uceservice@2.0.so|3ecf000c6f2b27dbf13363aaf3b4e94e382fdb96
+product/lib/com.qualcomm.qti.uceservice@2.1.so|52a43a3264fb1e1c9f8f67720a2ffc03436474f7
+product/lib/lib-imsvideocodec.so|efb69ed894eef1f0024bda42938a0d413be157a4
+product/lib/lib-imsvt.so|f3686294d2f7900f137576bcce5a6dac506db4e6
+product/lib/lib-imsvtextutils.so|fe95aec5ab14bfc9a2ea5c113edde19a811d7e38
+product/lib/lib-imsvtutils.so|12db6fc80a0d93f68edd4316d5d81eeb6d644f81
+product/lib/libdiag_system.so|0032f528662291dba2f7d85d1f398e0b779a6fc6
+product/lib/libimscamera_jni.so|f7a5334040b161ad7ee2ffd94d3bd6c8b98eecd0
+product/lib/libimsmedia_jni.so|bfa95638abb69099bdf1b52f01c636e3eaa866e5
+product/lib/vendor.qti.ims.callinfo@1.0.so|7dbf979f9da3a149700e7ff240f1b1d7dae93fe9
+product/lib/vendor.qti.ims.rcsconfig@1.0.so|e201b1f7f9ca99d97c2fbc4546e37293b7a46255
+product/lib/vendor.qti.ims.rcsconfig@1.1.so|c6c32a91d0f9a217082eea0ad96735f269691720
+product/lib/vendor.qti.imsrtpservice@2.0.so|7cd476bdf9a0eb3298fdbfe2c2b04792fbac406f
+product/lib/vendor.qti.imsrtpservice@2.1.so|001ed55a304404d0f717792250e19354e9cd4059
+product/lib64/com.qualcomm.qti.imscmservice@1.0.so|3ddca2476357eeaed6a996a4043c2a6c9e2e9a48
+product/lib64/com.qualcomm.qti.imscmservice@2.0.so|a5b0132d0f3541d6816ff3f38ee60dbd41bdfca8
+product/lib64/com.qualcomm.qti.imscmservice@2.1.so|c050bbbcebba14c9b5b6ef9781f02ba73968954c
+product/lib64/com.qualcomm.qti.imscmservice@2.2.so|dbfa3ffdb75300091ba5d7db2427a475c8333d54
+product/lib64/com.qualcomm.qti.uceservice@2.0.so|7564411f806eb8d601197066ca3cf5d6a1bdd5ed
+product/lib64/com.qualcomm.qti.uceservice@2.1.so|5a562ea431d27cf70ab7ce2d83a55bc97e6b1304
+product/lib64/lib-imsvideocodec.so|e9ec032eb738b51c8aff5552c8f1d2f7be45343e
+product/lib64/lib-imsvt.so|11bf7481d01859c5a5a9aa5538977bc73a957571
+product/lib64/lib-imsvtextutils.so|dbf6d45873e8b4f06cdedc4f1efee886ede702f8
+product/lib64/lib-imsvtutils.so|1627429094c78171be5f6275cecdbcab4ecce1cf
+product/lib64/libdiag_system.so|9088415879e9da86923db26cf37a04225f8d3911
+product/lib64/libimscamera_jni.so|41fd9faa10818c9f7c5a14d372a07f79b0ca0daa
+product/lib64/libimsmedia_jni.so|448795a73bbf72fc0c9876f86a13769139ea8022
+product/lib64/vendor.qti.ims.callinfo@1.0.so|bf2a4a99c4ac33e3453e196e9961568b175f5b1e
+product/lib64/vendor.qti.ims.rcsconfig@1.0.so|3c009fdc33fe7ccfef9025c2911cec0ba9242516
+product/lib64/vendor.qti.ims.rcsconfig@1.1.so|e0f2ac53139a23c4d85e0bf9be7b3ce699967096
+product/lib64/vendor.qti.imsrtpservice@2.0.so|6ef5cd72d34c20e82cb0e58681a4aae9b0dac99a
+product/lib64/vendor.qti.imsrtpservice@2.1.so|6dbe703a5a8389c342008c950aaec7a3a260a055
+-product/priv-app/ims/ims.apk|0d29a46d9560932ede892dd8fdab275db3e9f2b5
 
 # Latency
 -product/framework/vendor.qti.hardware.data.latency-V1.0-java.jar
@@ -245,20 +245,20 @@ product/etc/permissions/qti_telephony_hidl_wrapper.xml
 product/etc/permissions/qti_telephony_utils.xml
 
 # RIL (embms)
--product/app/embms/embms.apk|e364de916ae2dd9a69aee6a9766c3783457a6d75
-product/etc/permissions/embms.xml|5589ed8da213acd27e2ad2109094561eb1be30a7
--product/framework/embmslibrary.jar|00eb5b4144f001423032a88cc1d227b3655db88b
+-product/app/embms/embms.apk
+product/etc/permissions/embms.xml
+-product/framework/embmslibrary.jar
 
-# RIL - from raphael-user-10-QKQ1.190825.002-V12.0.2.0.QFKMIXM-release-keys
-etc/permissions/privapp-permissions-qti.xml|3eda27003bad39514039190d0d7eb675ba034cb9
-etc/sysconfig/qti_whitelist.xml|8cf01f231c28e204edd40414317eedf81d708232
--product/app/datastatusnotification/datastatusnotification.apk|4445113c18c1bff5e604b2eae667186a76dc9adb
--product/app/QtiTelephonyService/QtiTelephonyService.apk|ba717eca406b8001d5d82c53edb8da4ce4f776ed
+# RIL - from qssi-user-10-QKQ1.200114.002-18-release-keys
+etc/permissions/privapp-permissions-qti.xml|e928e890c7e8cddf74941ce121e957c381147400
+etc/sysconfig/qti_whitelist.xml|ce1fed1bc641f33eed24ad1c7b39ffe1bd206f0a
+-product/app/datastatusnotification/datastatusnotification.apk|05a25bd846bfe5f2f0c3b4a5a581c052a9ad8567
+-product/app/QtiTelephonyService/QtiTelephonyService.apk|97126135a5bf30c1a8acccbc37326322235d4534
 product/etc/permissions/qcrilhook.xml|ceb890ab3c1645aa0d0044abab1ba58c4097a991
 product/etc/permissions/telephonyservice.xml|a39eefcaf85fb8da60044fdbbcfddd95deb031c8
--product/framework/qcrilhook.jar|0ffee119157a532d5903246659662c5765eb7897
--product/framework/QtiTelephonyServicelibrary.jar|ee040ed40595a0c5871780b1d5be753954ae523d
--product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|8c2a62b66601940981b95bee6481fa14f03fdd5f
+-product/framework/qcrilhook.jar|23768fda90519d799e682fd058ec85b7b5cd6f89
+-product/framework/QtiTelephonyServicelibrary.jar|ea30b05eaad3ebee157421b3f31bf8585566b4cd
+-product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|9b05a569d117238e8d66fd427f86c4b13a1d0460
 
 # Telephony (qti-telephony-common) - from DRG - QKQ1.190828.002
 product/framework/qti-telephony-common.jar|74adbf98e89531ac385ab5c4cea3c2549a0d24b0
