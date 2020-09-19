@@ -14,6 +14,10 @@
  * limitations under the License.
  */
 
+#include <vector>
+#include <string>
+#include <fstream>
+
 #include <android-base/logging.h>
 #include <android-base/properties.h>
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
@@ -46,13 +50,37 @@ void load_RMX1911() {
     property_override("ro.product.model", "Realme 5");
     property_override("ro.build.product", "RMX1911");
     property_override("ro.product.device", "RMX1911");
-    property_override("ro.control_privapp_permissions", "log");
 }
 
+void load_RMX1925() {
+    property_override("ro.product.model", "Realme 5s");
+    property_override("ro.build.product", "RMX1925");
+    property_override("ro.product.device", "RMX1925");
+}
+
+void load_RMX2030() {
+    property_override("ro.product.model", "Realme 5i");
+    property_override("ro.build.product", "RMX2030");
+    property_override("ro.product.device", "RMX2030");
+}
 
 void vendor_load_properties() {
-    load_RMX1911();
+    std::ifstream infile("/proc/oppoVersion/prjVersion");
+    std::string prjName;
+    getline(infile, prjName);
 
+    if (prjName == "19631") {
+        load_RMX1911();
+    } else if (prjName == "19632") {
+        load_RMX1925();
+    } else if (prjName == "19743") {
+        load_RMX2030();
+    } else {
+        LOG(ERROR) << __func__ << ": unexcepted prjVersion!";
+    }
+
+
+    property_override("ro.control_privapp_permissions", "log");
     property_override("ro.build.description", "coral-user 11 RP1A.200720.009 6720564 release-keys");
     property_override("ro.vendor.build.fingerprint", "google/coral/coral:11/RP1A.200720.009/6720564:user/release-keys");
     property_override("ro.build.fingerprint", "google/coral/coral:11/RP1A.200720.009/6720564:user/release-keys");
