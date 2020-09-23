@@ -36,7 +36,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.disable_backpressure=1 \
     debug.sf.enable_gl_backpressure=1 \
-    debug.sf.enable_hwc_vds=1
+    debug.sf.enable_hwc_vds=1 \
+    debug.sf.latch_unsignaled=1
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.vendor.display.enable_kernel_idle_timer=true \
