@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_RMX1911.mk
+    $(LOCAL_DIR)/lineage_realme_trinket.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_RMX1911-user \
-    lineage_RMX1911-userdebug \
-    lineage_RMX1911-eng
+    lineage_realme_trinket-user \
+    lineage_realme_trinket-userdebug \
+    lineage_realme_trinket-eng

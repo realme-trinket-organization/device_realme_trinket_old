@@ -189,6 +189,6 @@ Value* VerifyTrustZoneFn(const char* name, State* state,
     return StringValue(strdup(ret ? "1" : "0"));
 }
 
-void Register_librecovery_updater_RMX1911() {
-    RegisterFunction("RMX1911.verify_trustzone", VerifyTrustZoneFn);
+void Register_librecovery_updater_realme_trinket() {
+    RegisterFunction("realme_trinket.verify_trustzone", VerifyTrustZoneFn);
 }

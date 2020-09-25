@@ -8,7 +8,7 @@ BOARD_VENDOR := realme
 
 BUILD_BROKEN_DUP_RULES := true
 
-DEVICE_PATH := device/realme/RMX1911
+DEVICE_PATH := device/realme/realme_trinket
 
 # Architecture
 TARGET_ARCH := arm64
@@ -46,9 +46,9 @@ BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET := 0x01000000
 TARGET_KERNEL_ARCH := arm64
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-  TARGET_KERNEL_CONFIG := RMX1911_defconfig
+  TARGET_KERNEL_CONFIG := realme-trinket_defconfig
   TARGET_KERNEL_CLANG_COMPILE := true
-  TARGET_KERNEL_SOURCE := kernel/realme/RMX1911
+  TARGET_KERNEL_SOURCE := kernel/realme/trinket
 endif
 
 # Platform
@@ -102,9 +102,9 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/framework_compatibi
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/framework_manifest.xml
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_RMX1911
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_realme_trinket
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
-TARGET_RECOVERY_DEVICE_MODULES := libinit_RMX1911
+TARGET_RECOVERY_DEVICE_MODULES := libinit_realme_trinket
 
 # NFC
 TARGET_USES_NQ_NFC := true
@@ -137,7 +137,7 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 
 # Releasetools
-TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_RMX1911
+TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_realme_trinket
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # RIL
@@ -169,4 +169,4 @@ BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flag 2
 
 # Inherit from the proprietary version
--include vendor/realme/RMX1911/BoardConfigVendor.mk
+-include vendor/realme/realme_trinket/BoardConfigVendor.mk

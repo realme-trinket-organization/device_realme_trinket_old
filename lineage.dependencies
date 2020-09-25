@@ -1,12 +1,12 @@
 [
   {
-    "repository": "dodyirawan85/vendor_realme_RMX1911",
-    "target_path": "vendor/realme/RMX1911",
+    "repository": "dodyirawan85/vendor_realme_trinket",
+    "target_path": "vendor/realme/trinket",
     "branch": "ten"
   },
   {
-    "repository": "dodyirawan85/kernel_realme_RMX1911",
-    "target_path": "kernel/realme/RMX1911",
+    "repository": "dodyirawan85/kernel_realme_trinket",
+    "target_path": "kernel/realme/trinket",
     "branch": "ten"
   }
 ]

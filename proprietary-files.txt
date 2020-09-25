@@ -1,4 +1,4 @@
-## RMX1911 package version: RMX1911EX_11_OTA_1530, unless stated otherwise
+## realme_trinket package version: RMX1911EX_11_OTA_1530, unless stated otherwise
 
 # ANT
 lib/libantradio.so

@@ -1,7 +1,4 @@
-# Device Tree files for Realme 5
-
-The Realme 5(codenamed _"RMX1911"_) is a mid-range smartphone from Realme. It was released in August 2019.
-
+# Unified Device Tree files for Realme 5, 5s, 5i (RMX{1911,1925,2030})
 ## Device specifications
 
 | Device                  | Realme 5                                                                         |

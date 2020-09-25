@@ -31,7 +31,7 @@ def AddTrustZoneAssertion(info, input_zip):
   if m:
     versions = m.group(1).split('|')
     if len(versions) and '*' not in versions:
-      cmd = 'assert(RMX1911.verify_trustzone(' + ','.join(['"%s"' % tz for tz in versions]) + ') == "1" || abort("ERROR: This package requires firmware from an Android 10 based RealmeUI build. Please upgrade firmware and retry!"););'
+      cmd = 'assert(realme_trinket.verify_trustzone(' + ','.join(['"%s"' % tz for tz in versions]) + ') == "1" || abort("ERROR: This package requires firmware from an Android 10 based RealmeUI build. Please upgrade firmware and retry!"););'
       info.script.AppendExtra(cmd)
 
 def PatchVendor(info):
