@@ -7,8 +7,8 @@
 
 set -e
 
-DEVICE=raphael
-VENDOR=xiaomi
+DEVICE=realme_trinket
+VENDOR=realme
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
@@ -55,4 +55,4 @@ setup_vendor "${DEVICE}" "${VENDOR}" "${LINEAGE_ROOT}" true "${CLEAN_VENDOR}"
 extract "${MY_DIR}/proprietary-files.txt" "${SRC}" \
         "${KANG}" --section "${SECTION}"
 
-"${MY_DIR}/setup-makefiles.sh"
+bash "${MY_DIR}/setup-makefiles.sh"

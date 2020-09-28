@@ -1,24 +1,23 @@
-#  Device Tree for Xiaomi Redmi K20 Pro/ MI 9T PRO (Raphael/RaphaelIN)
+# Unified Device Tree files for Realme 5, 5s, 5i (RMX{1911,1925,2030})
+## Device specifications
 
-## Spec Sheet
-
-| Feature                 | Specification                                                              |
-| :---------------------- | :--------------------------------                                          |
-| CPU                     | Octa-core (1x2.84 GHz Kryo 485 & 3x2.42 GHz Kryo 485 & 4x1.78 GHz Kryo 485)|
-| Chipset                 | Qualcomm SDM855 Snapdragon 855 (7 nm)                                      |
-| GPU                     | Adreno 640                                                                 |
-| Memory                  | 6 GB / 8 GB                                                                |
-| Shipped Android Version | 9.0                                                                        |
-| Storage                 | 128 GB / 256 GB                                                            |
-| Battery                 | 4000 mAh (non-removable)                                                   |
-| Dimensions              | 156.7 x 74.3 x 8.8 mm (6.17 x 2.93 x 0.35 in)                              |
-| Display                 | 1080 x 2340 pixels, 19.5:9 ratio (~403 ppi density)                        |
-| Rear Camera             | 48 MP, f/1.8, 26mm (wide), 1/2", 0.8µm, PDAF, Laser AF                     |
-|                         |  8 MP, f/2.4, 53mm (telephoto), 1/4", 1.12µm, PDAF, Laser AF, 2x optical  |
-|                         |  13 MP, f/2.4, 12mm (ultrawide), 1/3", 1.12µm, LED flash                  |
-| Front Camera            | 20 MP                                                                      |
-| Release Date            | JUNE 2019                                                                  |
+| Device                  | Realme 5                                                                         |
+| ----------------------- | :------------------------------------------------------------------------------- |
+| SoC                     | Qualcomm SDM665 Snapdragon 665 (11 nm)                                           |
+| CPU                     | Octa-core (4x2.0 GHz Kryo 260 Gold & 4x1.8 GHz Kryo 260 Silver)                  |
+| GPU                     | Adreno 610                                                                       |
+| Memory                  | 32GB 3GB RAM, 64GB 3GB RAM, 64GB 4GB RAM, 128GB 4GB RAM                          |
+| Shipped Android Version | 9 with ColorOS 6.0                                                               |
+| Storage                 | 64/128 GB UFS 2.1                                                                |
+| Battery                 | Non-removable Li-Po 5000 mAh battery                                             |
+| Dimensions              | 164.4 x 75.6 x 9.3 mm (6.47 x 2.98 x 0.37 in)                                    |
+| Display                 | 720 x 1600 pixels, 6.5 inch, IPS LCD                                             |
+| Rear camera 1           | 48 MP, f/1.8, (wide), 1/2", 0.8µm, PDAF                                          |
+| Rear camera 2           | 8 MP, f/2.2, 13mm (ultrawide), 1/4", 1.12µm                                      |
+| Rear camera 3	          | 2 MP, f/2.4, 1/5", 1.75µm (dedicated macro camera)                               |
+| Rear camera 4	          | 2 MP, f/2.4, 1/5", 1.75µm, depth sensor                                          |
+| Front camera            | 13 MP, f/2.0, 26mm (wide), 1/3.1", 1.12µm                                        |
 
 ## Device Picture
 
-![Xiaomi RedmiK20 Pro/ MI 9T PRO](https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k20pro-.jpg "Xiaomi RedmiK20 Pro/ MI 9T PRO")
+![Realme 5](https://fdn2.gsmarena.com/vv/pics/realme/realme-5-rmx1911-2.jpg "Realme 5")

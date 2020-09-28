@@ -1,7 +1,7 @@
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := android.hardware.power@1.2-service.raphael
+LOCAL_MODULE := android.hardware.power@1.2-service.realme_trinket
 LOCAL_MODULE_TAGS := optional
 
 LOCAL_MODULE_PATH := $(TARGET_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/bin
@@ -33,7 +33,8 @@ LOCAL_SRC_FILES := \
     powerhintparser.c \
     service.cpp \
     Power.cpp \
-    power-msmnile.c
+    power.c \
+    power-6125.c
 
 LOCAL_C_INCLUDES := external/libxml2/include \
                     external/icu/icu4c/source/common

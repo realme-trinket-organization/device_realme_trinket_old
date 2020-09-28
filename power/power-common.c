@@ -79,14 +79,6 @@ void power_hint(power_hint_t hint, void *data)
     switch(hint) {
         case POWER_HINT_VSYNC:
         break;
-        case POWER_HINT_VIDEO_DECODE:
-        break;
-        case POWER_HINT_LOW_POWER:
-        break;
-        case POWER_HINT_LAUNCH:
-        break;
-        case POWER_HINT_DISABLE_TOUCH:
-        break;
         case POWER_HINT_VR_MODE:
             ALOGI("VR mode power hint not handled in power_hint_override");
             break;
@@ -109,35 +101,13 @@ void power_hint(power_hint_t hint, void *data)
                     handles[hint].ref_count++;
             }
             else
-                if (handles[hint].handle > 0) {
+                if (handles[hint].handle > 0)
                     if (--handles[hint].ref_count == 0) {
                         release_request(handles[hint].handle);
                         handles[hint].handle = 0;
                     }
-                 }  else
+                else
                     ALOGE("Lock for hint: %X was not acquired, cannot be released", hint);
         break;
     }
-}
-
-int __attribute__ ((weak)) set_interactive_override(int on)
-{
-    return HINT_NONE;
-}
-
-void set_interactive(int on)
-{
-    if (!on) {
-        /* Send Display OFF hint to perf HAL */
-        perf_hint_enable(VENDOR_HINT_DISPLAY_OFF, 0);
-    } else {
-        /* Send Display ON hint to perf HAL */
-        perf_hint_enable(VENDOR_HINT_DISPLAY_ON, 0);
-    }
-
-    if (set_interactive_override(on) == HINT_HANDLED) {
-        return;
-    }
-
-    ALOGI("Got set_interactive hint");
 }
