@@ -73,9 +73,9 @@ PRODUCT_PACKAGES += \
     qcom.fmradio
 
 # HIDL
-PRODUCT_PACKAGES += \
-    android.hidl.base@1.0 \
-    android.hidl.manager@1.0
+# PRODUCT_PACKAGES += \
+#     android.hidl.base@1.0 \
+#     android.hidl.manager@1.0
 
 # HotwordEnrollement
 PRODUCT_COPY_FILES += \
@@ -137,8 +137,8 @@ PRODUCT_PACKAGES += \
     qti_telephony_utils.xml \
     telephony-ext
 
-PRODUCT_BOOT_JARS += \
-    telephony-ext
+# PRODUCT_BOOT_JARS += \
+#     telephony-ext
 
 # TextClassifier
 PRODUCT_PACKAGES += \
