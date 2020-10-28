@@ -149,15 +149,11 @@ TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 #     device/qcom/sepolicy/qva/public
 
 # Power
+BOARD_POWER_CUSTOM_BOARD_LIB := libpower_6125
 TARGET_USES_INTERACTION_BOOST := true
-TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
 
 # Telephony
 TARGET_USES_ALTERNATIVE_MANUAL_NETWORK_SELECT := true
-
-# Treble
-BOARD_VNDK_VERSION := current
-PRODUCT_FULL_TREBLE_OVERRIDE := true
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
